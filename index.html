@@ -8,27 +8,87 @@
 </head>
 
 <body>
-    <header>
+    <header class="nav">
         <nav class="navbar">
-            <div class="logo"><img class="logo" src="peace.jpeg" alt="logo"></div>
+            <div class="logo"><img class="logo" src="./assets/images/peace.jpeg" alt="logo"></div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Home</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#inspiration">Inspirations</a></li>
+                <li><a href="#connect">Connect</a></li>
             </ul>
 
         </nav>
     </header>
-    <section class="main">
-        <h1>
-            Today's mantra
-        </h1>
-        <h3>
-            If you're changing the world, you're working on important things. You're excited to get up in the morning.
-        </h3>
-        <h5>
-            <button class="connect-btn"><a class="connect-link" href="https://www.instagram.com/in.notion/">connect</a></button>
-        </h5>
-    </section>
+    <main>
+        <section id="home">
+            <img class="home-img" id="star" src="assets/images/stars.png">
+            <img class="home-img" id="moon" src="assets/images/moon.png">
+            <img class="home-img" id="behind" src="assets/images/mountains_behind.png">
+            <h2 id="home-text">Welcome to in.notion</h2>
+            <h5 id="home-text2">Your escapism to creativity.</h5>
+            <button class="connect-btn"><a class="connect-link" href="https://www.instagram.com/in.notion/">Join Us</a></button>
+            <img class="home-img" id="front"  src="assets/images/mountains_front.png">
+        </section>
+
+        <section id="about">
+            <header class="about-head -head">
+                <h2>Our Mission</h2>
+            </header>
+            <div class="about-content -content">
+                <p>We started in.notion as an Instagram account for daily inspiration and aesthetic flow of thoughts.</p>
+                <p>Our mission is to spread peace and positivity around.</p>
+                <p>Follow this space for daily inspiration.</p>
+            </div>
+        </section>
+
+
+        <section id="inspiration">
+            <header class="inspiration-head -head">
+                <h2>Inspitation</h2>
+            </header>
+            <div class="inspiration-content -content">
+                <h1>
+                    Today's mantra
+                </h1>
+                <h3>
+                    If you're changing the world, you're working on important things. You're excited to get up in the morning.
+                </h3>
+            </div>
+        </section>
+
+
+        <footer id="connect">
+            <header class="contact-head -head">
+                <h2>Contact Us</h2>
+            </header>
+            <div class="contact-content -content">
+                <div class="contact-socials">
+                    <p>Our socials</p>
+                    <a href="https://www.instagram.com/in.notion">
+                        <i class="fa fa-instagram" title="instagram" alt="instagram"></i>
+                    </a>
+                    <a href="https://www.twitter.com/nayyyhaa">
+                        <i class="fa fa-twitter" title="twitter" alt="twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC5vKowVqevKYFM8Sh7zrJKw">
+                        <i class="fa fa-youtube" title="youtube" alt="youtube"></i>
+                    </a>
+                </div>
+                <form  action="https://formspree.io/f/mknkoydw"
+                method="POST" target="_blank" class="contact-form">
+                    <p>Join our mailing list for daily inspiration.</p>
+                    <div class="email-form">
+                        <label for="email">Email:</label>
+                        <input type="email" name="_replyto" id="email"required>
+                        <button class="contact-btn" type="submit">Submit</button>
+                    </div>
+                </form>
+    
+            </div>
+            <h3>Copyright &copy; in.notion</h3>
+        </footer>
+    </main>
+    <script src="scripts/app.js"></script>
 </body>
 </html>
