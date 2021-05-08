@@ -13,12 +13,17 @@ html{
   background: #ad7df8;
 }
 h2{
-  font-size: 4rem;
+  font-size: 5rem;
 }
-
+h3{
+  font-size: 3rem;
+}
+p{
+  font-size: 2rem;
+}
 .-head{
   text-align: center;
-  padding: 2rem;
+  padding: 4rem 0rem;
 }
 .-content{
   width: 90%;
@@ -38,6 +43,13 @@ button:hover{
   transform: scale(1.01);
   background: white;
   color: #2b1055;
+}
+.box{
+  height: 80vh;
+  width: 90%;
+  border-radius: 2rem;
+  background: linear-gradient(rgba(223, 222, 222, 0.603),rgba(151, 148, 148, 0.199));
+
 }
 /*Nav bar*/
 
@@ -150,6 +162,26 @@ button:hover{
 #about{
   min-height: 100vh;
   background: linear-gradient(to bottom, #3b2957, #ad7df8);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame1, .frame2{
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  pointer-events: none;
+}
+.frame1{
+  top: 0rem;
+  left: 0
+}
+.frame2{
+  width: 40%;
+  bottom:0rem;
+  right: 0rem;
 }
 
 /*Inspiration page */
@@ -157,6 +189,12 @@ button:hover{
 #inspiration{
   min-height: 100vh;
   background: #ad7df8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inspiration-content{
+  text-align: center;
 }
 /*Contact page*/
 
