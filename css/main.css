@@ -63,6 +63,9 @@ button:hover{
   background: linear-gradient(rgba(223, 222, 222, 0.603),rgba(151, 148, 148, 0.199));
 
 }
+a{
+  text-decoration: none;
+}
 /*Nav bar*/
 
 .logo{
