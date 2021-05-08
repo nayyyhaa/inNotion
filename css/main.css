@@ -24,6 +24,9 @@ html{
   color: white;
   background: #ad7df8;
 }
+body{
+  animation: opening 0.5s ease-in forwards;
+}
 h2{
   font-size: 5rem;
 }
@@ -143,8 +146,13 @@ a{
   pointer-events: none;
 }
 #moon{
-  mix-blend-mode : lighten;
+  mix-blend-mode : screen;
   left: -10rem;
+  animation: glow 5s infinite alternate-reverse ease-in-out 0.5s;
+  transform-origin: initial;
+}
+#star{
+  animation: flow 5s infinite alternate-reverse ease-in-out 0.5s;
 }
 #front{
   z-index: 2;
@@ -201,6 +209,8 @@ a{
   width: 40%;
   bottom:0rem;
   right: 0rem;
+  animation: glow 5s infinite alternate-reverse ease-in-out 0.5s,
+  flow 5s infinite alternate-reverse ease-in-out 0.5s;
 }
 
 /*Inspiration page */
@@ -268,6 +278,33 @@ label{
   color: white;
 }
 
+/*Animations */
+
+@keyframes opening {
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes glow {
+  from {
+    transform: scale(1.1);
+  }
+
+  to {
+     transform: scale(1);
+  }
+}
+@keyframes flow {
+  from {
+    transform: translateX(10%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 /*media queries*/
 
 @media screen and (max-width: 800px) {
