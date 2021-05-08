@@ -26,6 +26,7 @@ html{
 }
 body{
   animation: opening 0.5s ease-in forwards;
+  overflow-x:hidden;
 }
 h2{
   font-size: 5rem;
