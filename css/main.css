@@ -113,17 +113,12 @@ a{
   background: white;
   border-radius: 2rem;
 }
-
-main{
-  overflow-x:hidden;
-}
 /*home page*/
 #home{
   background: linear-gradient(#2b1055, #7597de);
   position: relative;
   height: 100vh;
   width: 100%;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -196,6 +191,7 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .frame1, .frame2{
   position: absolute;
@@ -224,6 +220,7 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .inspiration-content{
   text-align: center;
