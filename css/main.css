@@ -26,7 +26,6 @@ html{
 }
 body{
   animation: opening 0.5s ease-in forwards;
-  overflow-x:hidden;
 }
 h2{
   font-size: 5rem;
@@ -115,6 +114,9 @@ a{
   border-radius: 2rem;
 }
 
+main{
+  overflow-x:hidden;
+}
 /*home page*/
 #home{
   background: linear-gradient(#2b1055, #7597de);
@@ -148,7 +150,7 @@ a{
 }
 #moon{
   mix-blend-mode : screen;
-  left: -10rem;
+  left: -15rem;
   animation: glow 5s infinite alternate-reverse ease-in-out 0.5s;
   transform-origin: initial;
 }

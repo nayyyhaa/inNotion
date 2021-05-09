@@ -16,7 +16,7 @@ document.addEventListener('scroll', function(){
     let value = window.scrollY;
     star.style.left = value + 'px';
     moon.style.marginLeft = value*0.5 + 'px';
-    behind.style.top = -value*0.15 + 'px';
+    behind.style.top = value*0.25 + 'px';
     front.style.top = value*0 + 'px';
     homeText.style.marginTop= value*1.5 + 'px';
 })
