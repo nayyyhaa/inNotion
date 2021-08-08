@@ -33,6 +33,7 @@ h2{
 }
 h3{
   font-size: 3rem;
+  margin: 1rem;
 }
 p,a{
   font-size: 2rem;
@@ -46,7 +47,7 @@ p,a{
   margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   min-height: 60vh;
 }
 button{
@@ -59,6 +60,7 @@ button{
   cursor: pointer;
   transition: all 0.2s ease-in;
   color: white;
+  margin: 2rem 0;
 }
 button:hover{
   transform: scale(1.01);
