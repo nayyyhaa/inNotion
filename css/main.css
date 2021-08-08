@@ -25,6 +25,7 @@ html{
   background: #ad7df8;
 }
 body{
+  color: white;
   animation: opening 0.5s ease-in forwards;
 }
 h2{
@@ -43,6 +44,10 @@ p,a{
 .-content{
   width: 90%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 60vh;
 }
 button{
   background:  #2b1055;
@@ -53,6 +58,7 @@ button{
   ,3px 5px 10px rgba(0, 0, 0, 0.411);
   cursor: pointer;
   transition: all 0.2s ease-in;
+  color: white;
 }
 button:hover{
   transform: scale(1.01);
@@ -247,6 +253,8 @@ a{
   align-items: center;
   width: 90%;
   margin: auto;
+  min-height: auto;
+  flex-direction: unset;
 }
 .fa{
   color: white;

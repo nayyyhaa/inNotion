@@ -11,6 +11,10 @@ let hamburgerBars = document.querySelector('.fa');
 let navItems = document.querySelector(".nav-items");
 let links = navItems.querySelectorAll("a");
 
+/* Advice Button */
+let adviceButton = document.querySelector(".advice-btn");
+let adviceTxt = document.querySelector(".advice");
+
 /*parallax*/
 document.addEventListener('scroll', function(){
     let value = window.scrollY;
@@ -38,3 +42,17 @@ links.forEach(link => {
         hamburgerBars.className = "fa fa-bars";
     })
 })
+
+/* Advice */
+
+function generateAdvice() {
+    fetch("https://api.adviceslip.com/advice")
+    .then(response => response.json())
+    .then(data => {
+        adviceTxt.innerText = `"${data.slip.advice}"`;
+        console.log(data.slip.advice)
+    })
+}
+
+generateAdvice();
+adviceButton.addEventListener("click", generateAdvice)
