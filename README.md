@@ -1,2 +1,2 @@
 # inNotion
-React based Inspirational quotes website.
+Inspirational quotes website made with <3 in  VanillaJs, HTML & CSS.
